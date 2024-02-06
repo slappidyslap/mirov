@@ -1,0 +1,137 @@
+@media screen and (min-width: 1300px) {
+  .avatar img {
+    width: 20vw;
+  }
+
+  .cover,
+  footer {
+    height: 30vh;
+  }
+
+  .cover img {
+    width: 48vw;
+  }
+
+  .container {
+    padding: 0 calc(50% - 650px);
+  }
+
+  html {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1300px) {
+  .avatar img {
+    width: 23vw;
+  }
+
+  .cover,
+  footer {
+    height: 25vh;
+  }
+
+  .cover img {
+    width: 45vw;
+  }
+
+  .container {
+    padding: 0 calc(50% - 450px);
+  }
+
+  html {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1000px) {
+  .avatar img {
+    width: 26vw;
+  }
+
+  .cover,
+  footer {
+    height: 20vh;
+  }
+
+  .cover img {
+    width: 44vw;
+  }
+
+  .container {
+    padding: 0 calc(50% - 350px);
+  }
+
+  html {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  .avatar img {
+    width: 30vw;
+  }
+
+  .cover,
+  footer {
+    height: 17vh;
+  }
+
+  .cover img {
+    width: 48vw;
+  }
+
+  .container {
+    padding: 0 calc(50% - 250px);
+  }
+
+  html {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 450px) and (max-width: 600px) {
+  .avatar img {
+    width: 35vw;
+  }
+
+  .cover,
+  footer {
+    height: 15vh;
+  }
+
+  .cover img {
+    width: 53vw;
+  }
+
+  .container {
+    padding: 0 calc(50% - 200px);
+  }
+
+  html {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .avatar img {
+    width: 35vw;
+  }
+
+  .cover,
+  footer {
+    height: 15vh;
+  }
+
+  .cover img {
+    width: 53vw;
+  }
+
+  .container {
+    padding: 0 calc(50% - 160px);
+  }
+
+  html {
+    font-size: 16px;
+  }
+}

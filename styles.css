@@ -1,0 +1,86 @@
+.cover {
+  width: 100%;
+  background-color: var(--bg1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cover>* {
+  display: inline;
+  vertical-align: top;
+}
+
+.avatar {
+  background: linear-gradient(to bottom,
+      var(--bg1),
+      var(--bg1) 50%,
+      var(--bg2) 50%,
+      var(--bg2));
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+  /* TODO */
+}
+
+.avatar img {
+  border-radius: 50%;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  background-color: var(--bg2);
+}
+
+main div.content>p,
+footer p {
+  text-align: justify;
+}
+
+main div.content>p,
+.gallery p span {
+  color: var(--fg1);
+}
+
+main img,
+.content>p {
+  margin-bottom: 1.5rem;
+}
+
+.gallery>p {
+  margin-bottom: 0.5rem;
+}
+
+/* https://css-tip.com/corner-only-border-image/ */
+.gallery img {
+  width: 100%;
+  --s: 50px;
+  /* the size on the corner */
+  --t: 0.2rem;
+  /* the thickness of the border */
+  --g: 0.5rem;
+  /* the gap between the border and image */
+
+  padding: calc(var(--g) + var(--t));
+  outline: var(--t) solid var(--fg1);
+  /* the color here */
+  outline-offset: calc(-1*var(--t));
+  mask:
+    conic-gradient(from -90deg at 10% 30%, blue 0deg 90deg, #00000000 90deg),
+    linear-gradient(#000 0 0) content-box,
+    conic-gradient(from 90deg at 90% 70%, blue 0deg 90deg, #00000000 90deg),
+    linear-gradient(#000 0 0) content-box;
+}
+
+footer {
+  background-color: var(--bg1);
+  color: var(--fg4);
+}
